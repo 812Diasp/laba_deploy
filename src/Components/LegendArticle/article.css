@@ -1,0 +1,29 @@
+.article{
+    transition: 0.2s;
+    background: #343434;
+    padding: 15px;
+    display: flex;
+    gap: 50px;
+}
+.article:hover{
+    transition: 0.2s;
+    background: #424242;
+    cursor: pointer;
+}
+.article-text{
+    padding-right: 50px;
+span{
+    color: #6e6e6e;
+}
+}
+.date-views{
+    display: flex;
+    justify-content: space-between;
+}
+.article-desc{
+    color: #a9a9a9;
+}
+.article-img{
+    width: 20rem;
+    height: 20rem;
+}

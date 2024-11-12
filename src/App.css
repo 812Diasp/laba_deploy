@@ -1,0 +1,27 @@
+body{
+    font-size: 18px;
+    color:white;
+    background-color: #1a1a1a;
+    --highlight-text: #f60314;
+    --secondary-text: #6b6b6b;
+    font-family: "Ubuntu", sans-serif;
+}
+.container{
+    font-size: 30px;
+}
+.wrap-text1{
+    text-align: center;
+    color: #6b6b6b;
+}
+.wrap-text1 .highlight{
+    color: var(--highlight-text);
+}
+.nav-item{
+    margin-left: 2rem;
+}
+.HomeText-list b{
+    color: var(--highlight-text);
+}
+.text-blank{
+    height: 8rem;
+}
