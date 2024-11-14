@@ -9,7 +9,7 @@ const Footer = () => {
 
                         </svg>
                     </a>
-                    <span className="mb-3 mb-md-0 text-body-secondary">© 2024 Classified Mystics Company</span>
+                    <span className="mb-3 mb-md-0 text-body-secondary">© 2024 Ghoost Co.</span>
                 </div>
 
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">

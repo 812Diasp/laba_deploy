@@ -1,0 +1,30 @@
+.text-blank{
+    height: 20rem;
+}
+.navbar1{
+    justify-content: center;
+    align-items: center;
+
+}
+.fact-generator{
+    transition: 0.4s;
+    position: fixed;
+    width: 30rem;
+    right: 1em;
+    bottom: 1.6em;
+    background-color: #343434;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+.text-blank{
+transition: 0.4s;
+}
+.fact-generator .btn-info{
+    font-size: 20px;
+}
+.text-blank{
+
+    padding: 30px;
+}

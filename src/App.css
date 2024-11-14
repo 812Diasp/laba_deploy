@@ -22,6 +22,3 @@ body{
 .HomeText-list b{
     color: var(--highlight-text);
 }
-.text-blank{
-    height: 8rem;
-}

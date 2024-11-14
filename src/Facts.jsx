@@ -1,5 +1,5 @@
-import { useState} from 'react';
-
+import {useEffect, useState} from 'react';
+import './Facts.css'
 const Facts = () => {
     const paranormalFacts = [
         {
@@ -292,7 +292,12 @@ const Facts = () => {
         }
     ]
     const [fact, setFact] = useState({fact:"Здесь будут факты (или просто сплетни)...",category:""});
-
+    useEffect(() => {
+        const interval = setInterval(() => {
+            changeFact()
+        }, 10000);
+        return () => clearInterval(interval);
+    }, []);
     function changeFact(){
         let index = Math.floor(Math.random()*paranormalFacts.length)
         let fact = paranormalFacts[index].fact
@@ -305,13 +310,13 @@ const Facts = () => {
     }
 
     return (
-        <div className={"fact-generator"}>
+        <div className={"fact-generator"} onClick={changeFact}>
             <div className="text-blank">
-                <h3 id={'fact-field'}>{fact.fact}</h3>
-                <h5 id={'fact-field'}>{fact.category}</h5>
+                <h4 className={'fact-field'}>{fact.fact}</h4>
+                <p className={'fact-field'}>{fact.category}</p>
             </div>
 
-            <button className={"btn btn-info"} onClick={changeFact}>Следующий</button>
+            <button className={"m-5 btn btn-info"} onClick={changeFact}>Следующий 👆 </button>
         </div>
     );
 };

@@ -18,7 +18,7 @@ function Article({desc, title, date,imgurl,views}) {
                 <p className={"article-desc"}>{desc}</p>
                 <div className="date-views">
                     <p>{date}</p>
-                    <span>{formatViews()}𓂀</span>
+                    <span>{formatViews()} просмотров</span>
                 </div>
 
             </div>
