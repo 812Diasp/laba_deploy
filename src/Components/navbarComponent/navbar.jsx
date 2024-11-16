@@ -1,6 +1,7 @@
 
 import spyLogo from '/src/assets/spy_logo.png'
 import './navbar.css'
+import {Link} from "react-router-dom";
 const Navbar = () => {
     return (
         <div>
@@ -12,22 +13,19 @@ const Navbar = () => {
                 </a>
 
                 <ul className="nav nav-pills">
-                    <li className="nav-item"><p><a href="/"
-                                                       className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                        Главная</a></p>
+                    <li className="nav-item"><p>
+                    <Link className={'link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'} to={'/'}>Главная</Link>
+                    </p>
                     </li>
 
-                    <li className="nav-item"><p><a href="/legends"
-                                                       className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                        Легенды и мифы</a></p>
+                    <li className="nav-item"><p>
+                        <Link to={'/legends'} className={"link-light link-offset-2 link-underline-opacity-25" +
+                            " link-underline-opacity-100-hover"}> Легенды и мифы</Link>
+                    </p>
                     </li>
-                    <li className="nav-item"><p><a href="/facts"
-                                                       className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                        Случайные факты</a></p>
-                    </li>
-                    <li className="nav-item"><p><a href="/info"
-                                                       className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                        Инфо</a></p>
+                    <li className="nav-item"><p>
+                        <Link to={'/info'} className={"link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover\""}>Инфо</Link>
+                       </p>
                     </li>
                 </ul>
             </header>

@@ -4,3 +4,13 @@
     justify-content: center;
     margin-top: 2rem;
 }
+.legends-sort{
+    display: flex;
+    gap: 1rem;
+    button{
+        padding: 10px;
+    }
+}
+.title-sort{
+    color: #838383;
+}

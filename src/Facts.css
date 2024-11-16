@@ -9,9 +9,9 @@
 .fact-generator{
     transition: 0.4s;
     position: fixed;
-    width: 30rem;
-    right: 1em;
-    bottom: 1.6em;
+    width: 25rem;
+    right: 0.3em;
+    bottom: 1em;
     background-color: #343434;
     align-items: center;
     display: flex;

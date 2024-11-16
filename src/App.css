@@ -4,7 +4,25 @@ body{
     background-color: #1a1a1a;
     --highlight-text: #f60314;
     --secondary-text: #6b6b6b;
+    --react : #00d7ff;
     font-family: "Ubuntu", sans-serif;
+}
+pre{
+    white-space: pre-wrap;
+    color: #e5e5e5;
+}
+a{
+    text-decoration: none;
+    text-underline: none;
+}
+.highlight{
+    color: var(--highlight-text);
+}
+.react-color{
+    color: var(--react);
+}
+.react-main-color{
+    color: #0198e5;
 }
 .container{
     font-size: 30px;

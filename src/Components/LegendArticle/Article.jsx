@@ -1,7 +1,8 @@
 import './article.css'
+import {Link} from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
-function Article({desc, title, date,imgurl,views}) {
+function Article({id,desc, title, date,imgurl,views}) {
 
 
     function formatViews(){
@@ -9,6 +10,7 @@ function Article({desc, title, date,imgurl,views}) {
     }
 
     return (
+        <Link to={`/article/${id}`}>
         <div className={"article mt-5"}>
             <div className="article-img">
                 <img src={imgurl} className="article-img"/>
@@ -23,6 +25,7 @@ function Article({desc, title, date,imgurl,views}) {
 
             </div>
         </div>
+        </Link>
     );
 }
 

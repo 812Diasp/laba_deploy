@@ -12,10 +12,11 @@ function Pagination({data, elementsOnPage}) {
     }, [data]);
     const renderPage = () => {
         const startIndex = currentPage;
-        const endIndex = Math.min(currentPage + dataLimit, articles.length);
+        const endIndex = Math.min(currentPage + dataLimit, articles.length)+1;
         return articles.slice(startIndex, endIndex).map((article) => (
             <Article
                 key={article.id}
+                id={article.id}
                 views={article.views}
                 imgurl={article.imgurl}
                 title={article.title}
@@ -76,10 +77,12 @@ function Pagination({data, elementsOnPage}) {
 
     return (
         <div>
-            <h3>Сортировка</h3>
-            <button className={'btn btn-info'} onClick={sortByPopularity}>По популярности</button>
-            <button className={'btn btn-info'} onClick={sortByDate}>По дате</button>
-            <button className={'btn btn-info'} onClick={sortLowPopularity}>Менее популярные</button>
+            <h3 className={'title-sort'}>Сортировка</h3>
+            <div className="legends-sort">
+                <button className={'btn btn-info'} onClick={sortByPopularity}>По популярности</button>
+                <button className={'btn btn-info'} onClick={sortByDate}>По дате</button>
+                <button className={'btn btn-info'} onClick={sortLowPopularity}>Менее популярные</button>
+            </div>
 
             {/* Render */}
             {renderPage()}

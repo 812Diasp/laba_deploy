@@ -1,3 +1,10 @@
 .logo-txt{
     font-family: Consolas;
 }
+.navbar1{
+    position: sticky;
+}
+.nav-pills{
+    display: flex;
+    justify-content: center;
+}
