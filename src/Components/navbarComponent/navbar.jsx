@@ -20,7 +20,7 @@ const Navbar = () => {
 
                     <li className="nav-item"><p>
                         <Link to={'/legends'} className={"link-light link-offset-2 link-underline-opacity-25" +
-                            " link-underline-opacity-100-hover"}> Легенды и мифы</Link>
+                            " link-underline-opacity-100-hover"}>Легенды и мифы</Link>
                     </p>
                     </li>
                     <li className="nav-item"><p>
