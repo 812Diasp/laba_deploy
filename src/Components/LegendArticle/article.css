@@ -4,7 +4,9 @@
     padding: 15px;
     display: flex;
     gap: 50px;
-    height: 24rem;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 10px;
 }
 .article:hover{
     transition: 0.2s;
@@ -25,6 +27,11 @@ span{
     color: #a9a9a9;
 }
 .article-img{
-    width: 20rem;
-    height: 20rem;
+    width: 12rem;
+    height: 12rem;
+}
+@media (max-width: 1800px){
+    .fact-generator{
+        display: none;
+    }
 }

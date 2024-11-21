@@ -10,7 +10,7 @@ const Video = () => {
                 <Link to={'/legends'}>
 
                 <h1 className={"video-text text-white"}>Исследовать мистические легенды</h1>
-                <video playsInline autoPlay muted loop poster="">
+                <video height={'400px'} playsInline autoPlay muted loop poster="">
                     <source src="Home_Page_Background_Vid.mp4" type="video/webm"/>
                     Your browser does not support the video tag.
                 </video>

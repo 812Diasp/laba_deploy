@@ -11,7 +11,7 @@ function Article({id,desc, title, date,imgurl,views}) {
 
     return (
         <Link to={`/article/${id}`}>
-        <div className={"article mt-5"}>
+        <div className={"article"}>
             <div className="article-img">
                 <img src={imgurl} className="article-img"/>
             </div>

@@ -1,5 +1,6 @@
 
 import Pagination from "./Components/PaginationArticles/Pages.jsx";
+import Facts from "./Facts.jsx";
 
 
 
@@ -8,7 +9,8 @@ import Pagination from "./Components/PaginationArticles/Pages.jsx";
 const Legends = ({articlesData}) => {
     return (
         <div>
-            <h1 className={"mt-5"}>Статьи</h1>
+            <Facts></Facts>
+            <h1 className={""}>Статьи</h1>
             <Pagination data={articlesData} elementsOnPage={2}></Pagination>
         </div>
     );

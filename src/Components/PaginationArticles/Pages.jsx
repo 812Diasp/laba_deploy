@@ -77,8 +77,9 @@ function Pagination({data, elementsOnPage}) {
 
     return (
         <div>
-            <h3 className={'title-sort'}>Сортировка</h3>
+
             <div className="legends-sort">
+                <h3 className={'title-sort'}>Сортировка:</h3>
                 <button className={'btn btn-info'} onClick={sortByPopularity}>По популярности</button>
                 <button className={'btn btn-info'} onClick={sortByDate}>По дате</button>
                 <button className={'btn btn-info'} onClick={sortLowPopularity}>Менее популярные</button>
